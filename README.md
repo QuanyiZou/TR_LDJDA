@@ -13,13 +13,9 @@ Source code and all the datasets used in the paper (A Novel Discriminative Repre
 ## Usage of KSETE
 - Step1: Download TR_LDJDA-master;
 - Step2: Open MATLAB, add the path.
-- Step3: Add the absolute path of weka.jar and SMOTE.jar in the folder KSETE into the classpath.txt of MATLAB.
+- Step3: Add the absolute path of weka.jar into the classpath.txt of MATLAB.
 - Step4: Enter folder  DLJDA_demo and open the script demo_AEEEM.m in MATLAB;
 - Step5: Click the run button in the manu of MATLAB Editor to run the example; 
-
-Note that owing to the randomness in the KSETE, the results of RQ1 and RQ2 may have a slight fluctuation compared with that in the paper.
-
-
 
 ## Contact
 If you have any problem about our code, feel free to contact --zouquanyi2010@163.com or describe your problem in Issues.
