@@ -10,7 +10,7 @@ Source code and all the datasets used in the paper (A Novel Discriminative Repre
 -- Full Reslut--    This document is the results of 511 cross-project defect prediction experiments.
 -- R+Rank--         This folder includes the code of Scoott-Kntt ESD test with R.    
 
-## Usage of KSETE
+## Usage 
 - Step1: Download TR_LDJDA-master;
 - Step2: Open MATLAB, add the path.
 - Step3: Add the absolute path of weka.jar into the classpath.txt of MATLAB.
