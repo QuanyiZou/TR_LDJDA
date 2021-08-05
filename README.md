@@ -5,9 +5,13 @@ Source code and all the datasets used in the paper (A Novel Discriminative Repre
 ## There are the following  main subfolders in -master
 -- AEEEM, NASA, Promise, and Relink--
                    These folders include the corresponding datasets used in the paper. Each dataste is a ARFF file.
+                   
 -- DLJDA_method --  This folder includes the source code of DLJDA.
+
 -- DLJDA_demo  ---  This folder includes four  demonstrations(eg.demo_AEEEM.m).
+
 -- Full Reslut--    This document is the results of 511 cross-project defect prediction experiments.
+
 -- R+Rank--         This folder includes the code of Scoott-Kntt ESD test with R.    
 
 ## Usage 
