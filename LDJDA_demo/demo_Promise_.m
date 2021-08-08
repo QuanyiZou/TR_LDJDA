@@ -22,7 +22,7 @@ file_av=fopen(file_nameav,'w');
     
 percent_tt = 0.9; % the percentage of training data in source data
 runtimes=30;
-num_pro=size(Projects,1);  % 项目的个数
+num_pro=size(Projects,1);  % 脧卯脛驴碌脛赂枚脢媒
 
 for i=1:num_pro
     tar_name=Projects{i,1}; % XX.arrf
@@ -33,9 +33,7 @@ for i=1:num_pro
     Y_tar=tar_data(:,end)';
     src=CrossProjects{i,1};
     src_Name=CrossProjects{i,3};
-    Result_tar=[];
-    Reslut=[];
-    
+    Result_tar=[];  
     
     for j=1:size(src,1)
         src_name=src_Name{j};
@@ -57,25 +55,21 @@ for i=1:num_pro
            data_tar_new=[X_tar_new',Y_tar'];
            [pre,dis] = liblinear(data_tran,data_tar_new);  % prediction  target label 
            [pd1,pf1,f_measure1, g_mesure1,balance1,MCC1, AUC1] =  performance(pre', Y_tar,dis'); 
-           f_measure=f_measure+f_measure1;
-           g_mesure= g_mesure+ g_mesure1;
-           balance=balance+balance1;
-           MCC=MCC+MCC1;
-           AUC=AUC+AUC1;
-           pd=pd+pd1;
-           pf=pf+pf1;
-          end
-          f_measure= f_measure/ runtimes;
-          g_mesure=g_mesure/runtimes;
-          balance=balance/runtimes;
-          MCC=MCC/runtimes;
-          AUC=AUC/runtimes;
-          pd=pd/runtimes;
-          pf=pf/runtimes;
-          resultStr =[modelName,',',task,',',src_name,',',tar_name,',',num2str(pd),',',num2str(pf),',',num2str(f_measure),',',num2str(g_mesure),',',num2str(balance),',',num2str(MCC),',',num2str(AUC),',';];
-          fprintf(file,'%s\n',resultStr);       
-          tar_reslut=[pd,pf,f_measure,g_mesure,balance,MCC, AUC]; %
-           Reslut=[Reslut;tar_reslut];
+           result=[pd1,pf1,f_measure1, g_mesure1,balance1,MCC1, AUC1];
+           Result=[Result;result]
+        end
+        reslut_med=median(Result);  %  Median of 30 runs
+        pd=reslut_med(1);
+        pf=reslut_med(2);
+        f_measure= reslut_med(3); 
+        g_mesure=reslut_med(4);
+        balance=reslut_med(5);
+        MCC=reslut_med(6);
+        AUC=reslut_med(7);        
+        resultStr =[modelName,',',task,',',src_name,',',tar_name,',',num2str(pd),',',num2str(pf),',',num2str(f_measure),',',num2str(g_mesure),',',num2str(balance),',',num2str(MCC),',',num2str(AUC),',';];
+        fprintf(file,'%s\n',resultStr);  
+        tar_result=[pd,pf,f_measure,g_mesure,balance,MCC, AUC]; %
+        Result_tar=[Result_tar;tar_result];
     end 
     av_reslut=mean(Reslut);  %  The average value in a target project. 
     av_pd=av_reslut(1);
