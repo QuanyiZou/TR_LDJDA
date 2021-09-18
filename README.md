@@ -1,6 +1,6 @@
 # TR_LDJDA
 # LDJDA-master
-Source code and all the datasets used in the paper (A Novel Discriminative Representations Learning Approach for Cross-Project Defect Prediction).
+Source code and all the datasets used in the paper (Discriminative Representations Learning Approach for Cross-Project Defect Prediction).
 
 ## There are the following  main subfolders in -master
 -- AEEEM, NASA, Promise, and Relink--
@@ -19,7 +19,7 @@ Source code and all the datasets used in the paper (A Novel Discriminative Repre
 - Step2: Open MATLAB, add the path.
 - Step3: Add the absolute path of weka.jar into the classpath.txt of MATLAB.
 - Step4: Enter folder  DLJDA_demo and open the script demo_AEEEM.m in MATLAB;
-- Step5: Click the run button in the manu of MATLAB Editor to run the example; 
+- Step5: Click the run button in the manu of MATLAB Editor to run the demo; 
 
 ## Contact
 If you have any problem about our code, feel free to contact --zouquanyi2010@163.com or describe your problem in Issues.
