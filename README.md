@@ -1,6 +1,6 @@
 # TR_LDJDA
 # LDJDA-master
-Source code and all the datasets used in the paper (Discriminative Representations Learning Approach for Cross-Project Defect Prediction).
+Source code and all the datasets in JDJDA.
 
 ## There are the following  main subfolders in -master
 -- AEEEM, NASA, Promise, and Relink--
