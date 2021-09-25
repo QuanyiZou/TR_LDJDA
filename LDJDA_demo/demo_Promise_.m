@@ -83,4 +83,3 @@ for i=1:num_pro
     resultStr_av =[modelName,',',tar_name,',',num2str(av_pd),',',num2str(av_pf),',',num2str(av_f_measure),',',num2str(av_g_mesure),',',num2str(av_balance),',',num2str(av_MCC),',',num2str(av_AUC),',';];
     fprintf(file_av,'%s\n',resultStr_av);
 end
-
