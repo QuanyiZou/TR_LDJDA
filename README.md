@@ -21,7 +21,7 @@ Source code and all the datasets in JDJDA.
 
 -Step 3：Copy the weka.jar package to the toolbox of matlab;
 
--Step 4: Enter "which classpath.txt" in the command line window of Matlab to open the "classpath.txt" file;
+-Step 4: Enter "edit classpath.txt" in the command line window of Matlab to open the "classpath.txt" file;
 
 -Step 5: Add "$matlabroot/java/jar/toolbox/weka.jar" into classpath.txt
 
