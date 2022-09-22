@@ -14,6 +14,13 @@ Source code and all the datasets in JDJDA.
 
 -- R+Rank--         This folder includes the code of Scoott-Kntt ESD test with R.    
 
+##  weka environment configuration 
+Step 1: Download and install weka
+step 2: To check whether java is installed in the computer
+Step 3：Copy the weka.jar package to the toolbox of matlab
+Step 4: Enter "which classpath.txt" in the command line window of Mat to open the "classpath.txt" file
+Step 5: Add "$matlabroot/java/jar/toolbox/weka.jar" into classpath.txt
+
 ## Usage 
 - Step1: Download TR_LDJDA-master;
 - Step2: Open MATLAB, add the path.
