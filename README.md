@@ -17,7 +17,7 @@ Source code and all the datasets in JDJDA.
 ##  weka environment configuration 
 -Step 1: Download and install weka;
 
--step 2: To check whether java is installed in the computer;
+-Step 2: To check whether java is installed in the computer;
 
 -Step 3：Copy the weka.jar package to the toolbox of matlab;
 
@@ -27,8 +27,8 @@ Source code and all the datasets in JDJDA.
 
 ## Usage 
 - Step1: Download TR_LDJDA-master;
-- Step2: Open MATLAB, add the path.
-- Step3: Add the absolute path of weka.jar into the classpath.txt of MATLAB.
+- Step2: Open MATLAB, add the path;
+- Step3: Add the absolute path of weka.jar into the classpath.txt of MATLAB;
 - Step4: Enter folder  DLJDA_demo and open the script demo_AEEEM.m in MATLAB;
 - Step5: Click the run button in the manu of MATLAB Editor to run the demo; 
 
